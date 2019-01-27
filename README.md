@@ -1,4 +1,4 @@
-# react-native-slideshow
+# react-native-simple-slideshow
 A quick and easy slideshow for react native. (Android & iOS)
 
 ![GIF](demo1.gif) ![GIF](demo2.gif)
@@ -6,19 +6,19 @@ A quick and easy slideshow for react native. (Android & iOS)
 ## Installation
 
 ```bash
-npm install react-native-slideshow --save
+yarn add react-native-simple-slideshow
 ```
 
 ## Usage
 
 ```javascript
-import Slideshow from 'react-native-slideshow';
+import Slideshow from 'react-native-simple-slideshow';
 
 // ...
 
 render() {
   return (
-    <Slideshow 
+    <Slideshow
       dataSource={[
         { url:'http://placeimg.com/640/480/any' },
         { url:'http://placeimg.com/640/480/any' },
@@ -71,7 +71,7 @@ export default class SlideshowTest extends Component {
 
   render() {
     return (
-    <Slideshow 
+    <Slideshow
         dataSource={this.state.dataSource}
         position={this.state.position}
         onPositionChanged={position => this.setState({ position })} />
@@ -124,7 +124,7 @@ dataSource: [
 | `url` | string / number | image (URL or a local file resource) |
 
 ## Credits
-[react-native-image-slider](https://github.com/PaulBGD/react-native-image-slider)
+Originally created by @haqiqi, modified by @dudynskyi.
 
 ## License
 MIT
